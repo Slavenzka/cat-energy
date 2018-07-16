@@ -1,0 +1,29 @@
+.logo-text {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $font-color__heading;
+  text-decoration: none;
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $width__tablet) {
+  .logo-text {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .logo-text {
+    font-size: 26px;
+    line-height: 25px;
+  }
+}

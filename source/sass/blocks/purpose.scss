@@ -1,0 +1,111 @@
+.purpose .container {
+  padding: 26px 0 26px 65px;
+  margin-top: 8px;
+  border: 1px solid rgb(237, 237, 237);
+}
+
+.purpose label:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+.purpose input {
+  position: absolute;
+  transform: translateX(-2000px);
+}
+
+.purpose label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-right: 20px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: $background__main;
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:hover::before {
+    border: 1px solid rgb(186, 186, 186);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.purpose input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  background-color: $background__elements;
+  border-radius: 50%;
+}
+
+.purpose input:focus + label {
+  outline: 2px solid $background__elements;
+}
+
+@media (min-width: $width__tablet) {
+  .purpose .container--short {
+    margin-top: 52px;
+    padding: 33px 0 35px 86px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  .purpose label:not(:first-of-type) {
+    margin-top: 33px;
+  }
+
+  .purpose label {
+    &::before {
+      top: -9px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .purpose input:checked + label::after {
+    top: 2px;
+    left: -48px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .purpose .container {
+    margin-top: 0;
+    margin-left: 99px;
+    padding: 33px 0 35px 86px;
+    width: 570px;
+  }
+
+  .purpose label {
+    &::before {
+      top: -9px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .purpose input:checked + label::after {
+    top: 2px;
+    left: -48px;
+    width: 18px;
+    height: 18px;
+  }
+}

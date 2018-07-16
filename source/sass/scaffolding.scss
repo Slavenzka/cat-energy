@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: $background__main;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $padding__mobile;
+  max-width: $width__mobile;
+  box-sizing: border-box;
+}
+
+@media (min-width: $width__tablet) {
+  .container {
+    padding: 0 $padding__tablet;
+    min-width: $width__tablet;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .container {
+    padding: 0 $padding__desktop;
+    min-width: $width__desktop;
+  }
+}

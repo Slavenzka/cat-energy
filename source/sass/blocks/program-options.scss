@@ -1,0 +1,226 @@
+.program-options__legend {
+  position: relative;
+  width: 164px;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-color__heading;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+}
+
+.program-options__wrapper {
+  display: flex;
+  margin-top: 21px;
+  padding: 20px 0 39px 46px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.program-options__wrapper input {
+  position: absolute;
+  transform: translateX(-2000px);
+}
+
+.program-options__wrapper label:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.program-options input + label {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:hover::before {
+    border: 1px solid rgb(186, 186, 186);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program-options input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -41px;
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.program-options input:focus + label {
+  outline: 2px solid $background__elements;
+}
+
+.program-request__required-fields {
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: $font-color__text;
+}
+
+@media (min-width: $width__tablet) {
+  .program-options__legend {
+    margin-top: 38px;
+    padding-left: 39px;
+    width: 292px;
+    box-sizing: border-box;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-options legend::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+
+  .program-options legend::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+
+  .program-options__wrapper {
+    margin-top: 46px;
+    padding-left: 99px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .program-options label {
+    width: 200px;
+  }
+
+  .program-options label:first-of-type,
+  .program-options label:nth-of-type(2) {
+    margin-bottom: 52px;
+  }
+
+  .program-options label:nth-of-type(2n) {
+    margin-left: 143px;
+    cursor: pointer;
+  }
+
+  .program-options input + label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+      border: 1px solid rgb(205, 205, 205);
+    }
+  }
+
+  .program-options input:checked + label::after {
+    top: 3px;
+    left: -50px;
+  }
+
+  .program-request__wrapper-button {
+    padding-bottom: 73px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 52px;
+  }
+
+  .program-request__required-fields {
+    margin-top: 29px;
+    margin-left: 44px;
+    width: 30%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .program-options__legend {
+    margin-top: 40px;
+    padding-left: 0;
+    width: 252px;
+  }
+
+  .program-options__legend::before {
+    top: 22px;
+    left: 38%;
+  }
+
+  .program-options__legend::after {
+    top: 22px;
+    margin-right: 40px;
+  }
+
+  .program-options__wrapper {
+    margin-top: 46px;
+    padding-left: 59px;
+    padding-bottom: 47px;
+    width: 100%;
+  }
+
+  .program-options label:not(:last-of-type) {
+    width: 200px;
+    margin-right: 125px;
+  }
+
+  .program-options label:first-of-type,
+  .program-options label:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  .program-options label:nth-of-type(2n) {
+    margin-left: 0;
+  }
+
+  .program-request__wrapper-button {
+    padding-bottom: 82px;
+  }
+
+  .program-request__required-fields {
+    margin-top: 29px;
+    margin-left: 19px;
+    width: 25%;
+  }
+}

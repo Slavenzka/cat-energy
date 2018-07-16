@@ -1,0 +1,53 @@
+.product-optional {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $font-color__text;
+  border-collapse: collapse;
+}
+
+.product-optional__ammount {
+  padding: 0;
+  width: 50%;
+}
+
+.product-optional__price {
+  padding: 0;
+  width: 50%;
+  text-align: right;
+}
+
+@media (min-width: $width__tablet) {
+  .product-optional {
+    margin: 0;
+    margin-top: 3px;
+    width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .product-optional__price {
+    width: 21%;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .product-optional {
+    margin-top: 15px;
+    width: 325px;
+  }
+
+  .product-optional__ammount {
+    text-align: left;
+  }
+
+  .product-optional__price {
+    padding-left: 16px;
+    text-align: left;
+  }
+}

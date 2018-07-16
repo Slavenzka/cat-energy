@@ -1,0 +1,20 @@
+.catalog-main__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $width__tablet) {
+  .catalog-main__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .catalog-main__list {
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,163 @@
+.program-request {
+  padding-top: 16px;
+  overflow: hidden;
+}
+
+.program-request__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $font-color__heading;
+}
+
+.program-request__invitation {
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+}
+
+.program-request__form {
+  padding-top: 39px;
+}
+
+.program-request__form fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.program-request__form label {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.program-request__wrapper {
+  margin-bottom: 28px;
+}
+
+.program-request__form .container--contacts {
+  margin-bottom: 29px;
+}
+
+.program-request__form .container--options {
+  margin-top: 23px;
+}
+
+.program-request__options .container {
+  padding-top: 23px;
+}
+
+@media (min-width: $width__tablet) {
+  .program-request {
+    padding-top: 3px;
+  }
+
+  .program-request__form label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-request__title {
+    margin-top: 34px;
+    font-size: 60px;
+  }
+
+  .program-request__invitation {
+    margin-top: 55px;
+    padding-left: 40px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-request__form {
+    margin-top: 27px;
+  }
+
+  .program-request__wrapper {
+    margin-bottom: 75px;
+  }
+
+  .program-request__form .container--contacts {
+    margin-bottom: 65px;
+  }
+
+  .program-request__form .container--options {
+    margin-top: 61px;
+  }
+
+  .program-request__wrapper .purpose {
+    padding-left: 4px;
+  }
+
+  .program-request__type .container--short {
+    min-width: 630px;
+  }
+
+  .program-request__wrapper-button {
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .program-request {
+    padding-top: 0;
+  }
+
+  .program-request__title {
+    margin-top: 54px;
+  }
+
+  .program-request__invitation {
+    margin-top: 55px;
+    padding-left: 0;
+    width: 30%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-request__wrapper {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+    max-width: $width__desktop;
+    box-sizing: border-box;
+  }
+
+  .program-request__wrapper-button {
+    padding-bottom: 82px;
+  }
+
+  .program-request__wrapper .container--short {
+    padding-right: 0;
+    min-width: 570px;
+  }
+
+  .program-request__form .container--contacts {
+    margin-bottom: 67px;
+  }
+
+  .program-request__form .container--options {
+    margin-top: 63px;
+  }
+
+  .program-request__wrapper .purpose {
+    padding-left: 21px;
+  }
+}

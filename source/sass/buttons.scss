@@ -1,0 +1,112 @@
+.button {
+  display: block;
+  padding: 11px 20px 11px 20px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: $background__elements;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--order {
+  padding: 10px 0 10px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--program {
+  margin-top: 135px;
+}
+
+.button--show-all {
+  margin-top: 1px;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  background-color: rgb(242, 242, 242);
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.button--submit {
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: $width__tablet) {
+  .button--program {
+    display: inline-block;
+    padding: 15px 29px 17px 25px;
+    margin: 0 90px 0 89px;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+  }
+
+  .button--submit {
+    margin: 0;
+    margin-left: 41px;
+    padding: 15px 20px 17px 20px;
+    width: 283px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--optional {
+    width: 100%;
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .button--program {
+    position: relative;
+    padding: 15px 29px 17px 25px;
+    margin: 5px 90px 0 80px;
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+  }
+
+  .button--optional {
+    width: 245px;
+    margin-top: 0;
+  }
+
+  .button--submit {
+    margin-left: 1px;
+    width: 568px;
+  }
+}

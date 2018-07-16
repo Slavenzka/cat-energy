@@ -1,0 +1,234 @@
+.owner-contacts__email::placeholder,
+.owner-contacts__phone::placeholder {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.owner-contacts__email:hover,
+.owner-contacts__phone:hover {
+  border: 1px solid rgb(205, 205, 205);
+}
+
+.owner-contacts__email:focus,
+.owner-contacts__phone:focus {
+  outline: 2px solid rgb(68, 68, 68);
+}
+
+.owner-contacts__email:invalid,
+.owner-contacts__phone:invalid {
+  outline: 2px solid rgb(255, 130, 130);
+}
+
+.owner-contacts__legend {
+  position: relative;
+  width: 201px;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-color__heading;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+}
+
+.owner-contacts__wrapper-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.owner-contacts__wrapper-item:first-of-type {
+  margin-top: 35px;
+}
+
+.owner-contacts__wrapper-item:not(:first-of-type) {
+  margin-top: 14px;
+}
+
+.owner-contacts__wrapper-item input {
+  padding: 12px 34px 12px 14px;
+  flex-grow: 1;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-transform: uppercase;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.owner-contacts__wrapper-item label {
+  padding-right: 12px;
+}
+
+.owner-contacts__icon-mail {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  fill: rgb(34, 34, 34);
+}
+
+.owner-contacts__icon-phone {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  fill: rgb(34, 34, 34);
+}
+
+.owner-contacts__email:focus + .owner-contacts__icon-mail,
+.owner-contacts__phone:focus + .owner-contacts__icon-phone {
+  fill: $background__elements;
+}
+
+.owner-contacts__email:invalid + .owner-contacts__icon-mail,
+.owner-contacts__phone:invalid + .owner-contacts__icon-phone {
+  fill: rgb(255, 130, 130);
+}
+
+@media (min-width: $width__tablet) {
+  .owner-contacts__email::placeholder,
+  .owner-contacts__phone::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .owner-contacts__legend {
+    margin-top: 75px;
+    padding-left: 39px;
+    width: 593px;
+    box-sizing: border-box;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 22px;
+      left: 100%;
+      height: 3px;
+      width: 50vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      height: 3px;
+      width: 50vw;
+      background-color: $background__elements;
+    }
+  }
+
+  .owner-contacts__wrapper-item {
+    width: 632px;
+    padding-left: 41px;
+  }
+
+  .owner-contacts__wrapper-item:first-of-type {
+    width: 632px;
+    margin-top: 76px;
+    padding-left: 41px;
+  }
+
+  .owner-contacts__wrapper-item:last-of-type {
+    margin-top: 20px;
+  }
+
+  .owner-contacts__wrapper-item label {
+    padding-right: 19px;
+  }
+
+  .owner-contacts__wrapper-item input {
+    padding: 10px 45px 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .owner-contacts__icon-mail {
+    top: 20px;
+    right: 21px;
+  }
+
+  .owner-contacts__icon-phone {
+    top: 17px;
+    right: 18px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .owner-contacts__legend {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 553px;
+
+    &::before {
+      top: 21px;
+      left: 100%;
+      height: 3px;
+      width: 150vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: calc(100% + 40px);
+      height: 3px;
+      width: 50vw;
+      background-color: $background__elements;
+    }
+  }
+
+  .owner-contacts__wrapper {
+    display: flex;
+    padding-top: 75px;
+    margin-left: 1px;
+  }
+
+  .owner-contacts__wrapper-item {
+    width: 570px;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+
+  .owner-contacts__wrapper-item:first-of-type {
+    width: 569px;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  .owner-contacts__wrapper-item:last-of-type {
+    margin-top: 0;
+    margin-left: 78px;
+  }
+
+  .owner-contacts__wrapper-item label {
+    padding-right: 17px;
+  }
+
+  .owner-contacts__icon-mail {
+    right: 20px;
+  }
+
+  .owner-contacts__icon-phone {
+    top: 17px;
+    right: 17px;
+  }
+}

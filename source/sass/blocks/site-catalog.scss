@@ -1,0 +1,235 @@
+.site-catalog__item:first-of-type {
+  margin: 0;
+  margin-top: 22px;
+}
+
+.site-catalog__item:last-of-type {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.site-catalog__item {
+  padding: 30px 20px 22px 20px;
+  background-color: $background__aux;
+}
+
+.site-catalog__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 71px;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: $background__elements;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--gain::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+}
+
+.site-catalog__description {
+  margin: 0;
+  margin-top: 29px;
+  padding: 0;
+  padding-bottom: 22px;
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+
+.site-catalog__link {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-top: 19px;
+  padding: 0;
+  width: 50%;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 3px;
+    left: calc(100% - 25px);
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active,
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.site-catalog__item:last-of-type .site-catalog__link::before {
+  right: 3px;
+}
+
+@media (min-width: $width__tablet) {
+  .site-catalog__item {
+    padding: 75px 275px 62px 53px;
+    background-color: $background__aux;
+  }
+
+  .site-catalog__item:last-of-type {
+    margin: 0;
+    margin-top: 30px;
+    padding-right: 312px;
+  }
+
+  .site-catalog__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 37px;
+
+    &::before {
+      top: 17px;
+      left: 393px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      top: 5px;
+      left: 423px;
+      width: 140px;
+      height: 194px;
+    }
+
+    &--gain::after {
+      top: 60px;
+      left: 357px;
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .site-catalog__description {
+    margin-top: 26px;
+    margin-left: -1px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0;
+  }
+
+  .site-catalog__link {
+    margin-top: 34px;
+    width: 155px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: 5px;
+      right: 0;
+    }
+  }
+
+  .site-catalog__item:last-of-type .site-catalog__link {
+    &::before {
+      right: 6px;
+    }
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .site-catalog {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-catalog__item {
+    padding: 75px 53px 62px 53px;
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .site-catalog__item:first-of-type {
+    margin-top: 0;
+  }
+
+  .site-catalog__item:last-of-type {
+    padding-right: 53px;
+    margin-top: 0;
+  }
+
+  .site-catalog__title {
+    margin-left: 160px;
+
+    &::before {
+      top: -28px;
+      left: -161px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: -34px;
+      left: -147px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--gain::after {
+      top: -6px;
+      left: -179px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .site-catalog__description {
+    margin-top: 75px;
+  }
+
+  .site-catalog__link {
+    margin-top: 9px;
+  }
+}
